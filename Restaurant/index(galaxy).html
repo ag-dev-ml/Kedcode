@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Restaurant</title>
+  <meta name="title" content="Restaurant">
+  <link rel="shortcut icon" href="Images/Galaxy-Icon.png" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="galaxy.css">
+  <link rel="preload" as="image" href="Images/slide-background-1.jpeg">
+  <link rel="preload" as="image" href="Images/slide-background-2.jpeg">
+  <link rel="preload" as="image" href="Images/slide-background-3.jpeg">
+
+</head>
+
+<body id="top">
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Galaxy Restaurant</p>
+  </div>
+
+  <div class="topbar">
+    <div class="container">
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          500 Fracine Street, Australia , Coult 5607
+        </span>
+      </address>
+
+      <div class="separator"></div>
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span"> Mon - Fri : 9.00 am to 10.00 pm</span> ||
+        <span class="span"> Sat - Sun : 11.00 am to 5.00 pm</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+91 984 578 9545</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:galaxyrestaurant@gmail.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">galaxyrestaurant@gmail.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="Images/restaurant-logo.png" width="110" height="90" alt="Galaxy - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="Images/restaurant-logo.png" width="110" height="90" alt="Galaxy - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            500 Fracine Street, Australia <br>
+            Coult 5607 
+          </address>
+
+          <p class="body-4 navbar-text">Open: 9.30 am - 10.30pm</p>
+
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">galaxyrestaurant@gmail.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+919845789545" class="body-1 contact-number hover-underline">
+            +91-984-5789545
+          </a>
+        </div>
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="Images/slide-background-1.jpeg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              ” For the Passion of <br>
+              Delectable Cuisine ”
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="Images/slide-background-2.jpeg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              ” Tastes Evoked by <br>
+              the Seasons ”
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="Images/slide-background-3.jpeg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              ” Where Tastes Narrates <br>
+              the Tale ”
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="Images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+      </section>
+      
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+          <h2 class="headline-1 section-title">Main Cuisine</h2>
+          <p class="section-text">
+            Main cuisine is not only about food; it's a reflection of history, geography, climate, and cultural heritage. It shapes the way people gather, eat, and interact.
+          </p>
+          <ul class="grid-list">
+            <li>
+              <div class="service-card">
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="Images/breakfast-background.jpeg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#">Breakfast</a>
+                  </h3>
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="Images/drinks-background.webp" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="title-4 card-title">
+                    <a href="#">Drinks</a>
+                  </h3>
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="Images/dinner-background.jpeg" width="285" height="336" loading="lazy" alt="Dinner"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content"
+                  <h3 class="title-4 card-title">
+                    <a href="#">Dinner</a>
+                  </h3>
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <img src="Images/mix-vegii-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="Images/mix-vegii-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+        </div>
+      </section>
+
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+          <div class="about-content">
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+            <h2 class="headline-1 section-title">Every Flavor Tells a Story</h2>
+            <p class="section-text">
+              "Every flavor tells a story: Embark on a culinary journey where each bite unveils the rich tapestry of cultures, traditions, and passions that have shaped our world."
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+919845789545" class="body-1 contact-number hover-underline">+91- 984 578 9545</a>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="Images/every flavor.jpeg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="Images/1950.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+          </figure>
+        </div>
+      </section>
+
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+        <div class="special-dish-banner">
+          <img src="Images/chaaps-wraps.jpeg" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+            <img src="Images/saved.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+            <p class="section-subtitle label-2">Special Dish</p>
+            <h2 class="headline-1 section-title">Chaap || Wraps</h2>
+            <p class="section-text">
+              Tender marinated chaaps (meat cuts) wrapped in soft bread, combining succulent flavors and convenience for a delightful culinary experience.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3" style="text-decoration:line-through;">Rs. 25.00</del>
+              <span class="span body-1">Rs. 15.00</span>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+          </div>
+        </div>
+
+        <img src="Images/mix-vegii-3.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+        <img src="Images/paneer.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+      </section>
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+          <p class="section-subtitle text-center label-2">Gorgeous Selection</p>
+          <h2 class="headline-1 section-title text-center">Deligent Menu</h2>
+          <ul class="grid-list">
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder">
+                  <img src="Images/dragon-rolls.jpg"  loading="lazy" alt="Dragon Rolls" class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title"> Dragon Rolls</a>
+                    </h3>
+                    <span class="badge label-1">Seasonal</span>
+                    <span class="span title-2">Rs 25.50</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Layer tempura shrimp, avocado, and sushi rice, roll tightly, and top with eel sauce and sesame seeds for a delectable fusion delight.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder">
+                  <img src="Images/french-fries.jpeg" width="100" height="100" loading="lazy" alt="Lasagne"
+                    class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">French Fries</a>
+                    </h3>
+                    <span class="span title-2">Rs. 40.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Crispy golden batons of deep-fried potato goodness, seasoned to perfection for a classic and irresistible snack.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="Images/maharaja-burger.webp" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                    class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Maharaja Burger</a>
+                    </h3>
+                    <span class="span title-2">Rs. 20.00</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Generously stack a succulent spiced chicken patty with creamy masala sauce, vibrant veggies, and paneer for an Indian-inspired royal indulgence.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="Images/cottage-cheese-tacos.jpg" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                    class="img-cover">
+                </figure>
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Cottage Cheese Tacos</a>
+                    </h3>
+                    <span class="badge label-1">New</span>
+                    <span class="span title-2">Rs.40</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Warm tortillas filled with melted cheese, offering a gooey and savory twist on the traditional taco experience.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="Images/pav-bhaji.jpg" width="100" height="100" loading="lazy" alt="Pav Bhaji"
+                    class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Pav Bhaji</a>
+                    </h3>
+                    <span class="span title-2">Rs. 25</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Simmered blend of mashed vegetables and spices, served with buttered pav buns, creating a flavorsome Indian street food delight.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="Images/afghani-paneer" width="100" height="100" loading="lazy" alt="Opu Fish"
+                    class="img-cover">
+                </figure>
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Afghani Panner</a>
+                    </h3>
+                    <span class="span title-2">Rs. 50.00</span>
+                  </div>
+                  <p class="card-text label-1">
+                    Delicate cubes of paneer marinated in aromatic spices and yogurt, grilled to perfection for a rich and flavorful Afghan-inspired dish.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          
+          <p class="menu-text text-center">
+            During winter daily from <span class="span">10:00 am</span> to <span class="span">9:00 pm</span>
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View All Menu</span>
+            <span class="text text-2" aria-hidden="true">View All Menu</span>
+          </a>
+
+          <img src="Images/mix-vegii-4.png" width="921" height="1036" loading="lazy" alt="shapeddd"
+            class="shape shape-2 move-anim">
+          <img src="Images/mix-vegii-5.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+        </div>
+      </section>
+
+
+      <section class="section testi text-center has-bg-image" aria-label="testimonials">
+        <div class="container">
+          <div class="quote">”</div>
+          <p class="headline-2 testi-text">
+            I wanted to thank you for inviting me down for that amazing dinner the other night. The food was
+            extraordinary.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="Images/profile-review.webp" width="100" height="100" loading="lazy" alt="profile-review"
+              class="img">
+            <p class="label-2 profile-name">Aryan Gupta</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="reservation">
+        <div class="container">
+          <div class="form reservation-form bg-black-10">
+            <form action="" class="form-left" style="background-image: url('Images/form-pattern.png');"> 
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+              <p class="form-text text-center">
+                Booking request <a href="tel:+88123123456" class="link">+91- 984 578 9545</a>
+                or fill out the order form
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" required isdigit="true">
+              </div>
+              <div class="input-wrapper">
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                  <select name="person" class="input-field" required>
+                    <option value="">Person </option>
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                    <option value="7-person">7 Person</option>
+                  </select>
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                  <input type="date" name="reservation-date" class="input-field">
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                  <select name="person" class="input-field" required>
+                    <option value="">Enter the time </option>
+                    <option value="08:00am">08 : 00 am</option>
+                    <option value="09:00am">09 : 00 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+              </div>
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1" style="color: white;">Book A Table</span>
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('Images/form-pattern.png')">
+              <h2 class="headline-1 text-center" id="contact">Contact Us</h2>
+              <p class="contact-label">Booking Request</p>
+              <a href="tel:+91- 984 578 9545" class="body-1 contact-number hover-underline">+91- 984 578 9545</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                500 Fracine Street <br> Australia , Coult 5607
+              </address>
+
+              <p class="contact-label">Lunch Time</p>
+
+              <p class="body-4">
+                Monday to Friday <br>
+                9.00 am - 10.00 pm <br>
+                Saturday to Sunday <br>
+                11.00 am - 5.00 pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Friday <br>
+                9.00 pm - 10.00pm <br> 
+                Saturday to Sunday <br>
+                11.00 am - 5.00 pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Opt for Us</p>
+
+          <h2 class="headline-1 section-title">Restaurant Clout</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="Images/hygenic-icon.png" width="100" height="80" loading="lazy" alt="hygenic-icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text"> From sourcing ingredients to presentation, every step is meticulously carried out to ensure a worry-free dining experience for all patrons.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="Images/fresh-envoirment.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">It is a space where the atmosphere is untainted, often featuring lush greenery, open spaces, and the absence of pollutants, creating an atmosphere that promotes well-being and a connection to nature.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+                <div class="card-icon">
+                  <img src="Images/chef.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">With a deep understanding of ingredients and an ability to adapt and improvise, a skilled chef consistently delivers gastronomic delights that leave a lasting impression.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="Images/party-wrappers.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text">Both events and parties bring people together for shared experiences, fostering connections and creating memorable moments.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="Images/fruits-combination.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="Images/stawberry.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+      <section class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">New Culinary Additions</p>
+
+          <h2 class="section-title headline-1 text-center">Incoming Event</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="Images/eyes-blur-background.jpeg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover" style="filter: blur(2px);">
+
+                  <time class="publish-date label-2" datetime="2023-06-15" style="background-color: rgba(0, 0, 0, 0.5); font-size: 15px;">01/09/2023</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavor Tempting Enough to Savor with Your Eyes
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="Images/tongue-blur-background.jpeg"  width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover" style="filter: blur(2px);">
+
+                  <time class="publish-date label-2" datetime="2023-09-08" style="background-color: rgba(0, 0, 0, 0.5); font-size: 15px; ">08/09/2023</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Food , Flavour</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your tongue.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="Images/receipe-blur-blackground" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover" style="filter: blur(2px);">
+
+                  <time class="publish-date label-2" datetime="2022-09-03" style="background-color: rgba(0, 0, 0, 0.5); font-size: 15px;">15/09/2023</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Recipie</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavorful Delights that Tempt Even the Mouth.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View Our Menu</span>
+            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+          </a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('Images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="Images/restaurant-logo.png" width="110" height="90" loading="lazy" alt="galaxyrestaurant">
+          </a>
+
+          <address class="body-4" style="font-size: 2.4rem;">
+            500 Fracine Street , Australia , Coult 5607
+          </address>
+
+          <a href="mailto:galaxyrestaurant@gmail.com" class="body-4 contact-link" style="font-size: 2.4rem;">galaxyrestaurant@gmail.com</a>
+
+          <a href="tel:+88123123456" class="body-4 contact-link" style="font-size: 2.4rem;">Booking Request : +91- 984 578 9545</a>
+
+          <p class="body-4" style="font-size: 2.4rem;">
+            Open : 09:00 am - 10:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1" style="font-size: 2.4rem;">
+            <br>Subscribe us
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+          <li>
+            <a href="#chef" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+          <li>
+            <a href="#contact" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <a href="www.facebook.com" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+          <li>
+            <a href="www.instagram.com" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+          <li>
+            <a href="www.twitter.com" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+          <li>
+            <a href="www.youtube.com" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2023 Galaxy Restaurant. All Rights Reserved <br> Implemented by <a href=""
+            target="_blank" class="link" style="text-decoration: none; color:yellow"> Kedcode</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <script src="galaxy.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
